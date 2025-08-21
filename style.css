@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei", sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.typewriter {
+  font-size: 20px;
+  margin: 20px 0;
+  transition: opacity 1s ease;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4cafef;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.option-btn:hover {
+  transform: scale(1.05);
+  background: #2b8dd6;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.page-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.next-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #f57c00;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.next-btn:hover {
+  transform: scale(1.05);
+  background: #e06600;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fancy-text {
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 0 0 5px #ff77ff, 0 0 10px #ff44cc, 0 0 20px #cc00aa;
+  animation: glowPulse 1.8s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { transform: scale(1); text-shadow: 0 0 5px #ff77ff; }
+  to { transform: scale(1.05); text-shadow: 0 0 15px #ff44cc, 0 0 30px #cc00aa; }
+}
+
+button.glow {
+  transition: all 0.3s ease;
+}
+button.glow:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 8px #ffd700;
+}
+
+/* 首页打字机文字 */
+.typewriter {
+  font-size: 2rem; /* 首页文字比正文更大 */
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 0 0 6px #00eaff, 0 0 12px #00cfff, 0 0 24px #0099ff;
+  animation: glowPulse 2s infinite alternate;
+}
+
+/* 页面标题 */
+.page-title {
+  font-size: 2.8rem; /* 大标题，比正文大 2~3 倍 */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #ff77ff, 0 0 20px #ff44cc, 0 0 40px #cc00aa;
+  animation: glowPulse 1.6s infinite alternate;
+}
+
+/* 正文文字 */
+.page-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f0f0f0;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  text-shadow: 0 0 4px #666;
+}
+
+/* 炫光呼吸动画 */
+@keyframes glowPulse {
+  from { transform: scale(1); text-shadow: 0 0 6px #ff77ff; }
+  to   { transform: scale(1.05); text-shadow: 0 0 15px #ff44cc, 0 0 30px #cc00aa; }
+}
